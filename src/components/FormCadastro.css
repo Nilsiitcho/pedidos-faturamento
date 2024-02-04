@@ -1,0 +1,40 @@
+.cadastro-container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background: #f2f5f8;
+    width: 100%;
+    /*novo*/
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cadastro-container input {
+    border: 1px solid #d2d3da;
+    border-radius: 4px;
+    padding: 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.cadastro-container input:focus {
+    border-color: #008561;
+    outline: none;
+}
+
+.cadastro-container button {
+    background: #008561;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.cadastro-container button:hover {
+    background: #007a5a;
+}
+
+.cadastro-container button:disabled {
+    background: #7ca99c;
+    cursor: not-allowed;
+}
