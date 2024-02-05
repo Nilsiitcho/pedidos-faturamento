@@ -16,4 +16,68 @@
   padding: 10px;
   border: 1px solid #008561;
   border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 14px
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background: #f2f5f8;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.footer .totalizador {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.totalizador .selecionado {
+  color: #efb103;
+}
+
+.totalizador .aprovado {
+  color: #008561;
+}
+
+
+.footer button {
+  background: #008561;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  height: 32px;
+}
+
+.footer button:hover {
+  background: #007a5a;
+}
+
+.footer button:disabled {
+  background: #7ca99c;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background: #da4453;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  height: 32px;
+}
+
+.btn-danger:hover {
+  background: #99000f;
 }
