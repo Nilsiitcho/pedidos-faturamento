@@ -58,8 +58,11 @@ function App() {
     }
 
     function handleDelete(item) {
-        console.log("handleDelete")
         setPedidos([...pedidos.filter(pedido => pedido.id != item.id)]);
+
+        if(item.checked){
+            setTotalSelecionado(totalSelecionado - item.value);
+        }
     }
 
     function renderPedidos() {
